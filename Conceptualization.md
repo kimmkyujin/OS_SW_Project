@@ -44,19 +44,13 @@ Logo: 든든(Deun Deun)
 
 
 - Register: 회원가입
-- Login request: 사용자 로그인 요청
-- Recipe search: 레시피 검색
+- Login: 사용자 로그인 
+- Recipe search: 레시피 검색 
 - Select custom option: 레시피에서 옵션 선택
 - Send inquiry: 문의사항 전송
 - Storage & Care guide: 재료, 도구보관법 제공
-- Provide recipe: 레시피 제공
 - Adapted recipe: 옵션에 맞춘 레시피 제공
-- Customer support: 문의사항 답변
-- Bug fix: 시스템 문제 해결
-- Request auth: 사용자 인증 요구
-- Create account: 계정 생성
-- Request recipe: 레시피 요청
-- Verify user: 사용자 확인
+- Customer support: 문의사항 해결 및 답변
 - Recipe update: 레시피 추가
 - User management: 유저 목록 관리
 
@@ -66,97 +60,62 @@ Logo: 든든(Deun Deun)
 
 1) Register
 
-|Actor | User, System |
+|Actor | User |
 |---|---|
 | Description | 사용자가 시스템에 회원가입을 시도한다.  |
 
-2) Login request
+2) Login
 
-|Actor | User, System |
+|Actor | User |
 |---|---|
 | Description | 사용자가 시스템에 로그인을 시도한다.   |
 
 3) Recipe search
 
-|Actor | User, System |
+|Actor | User |
 |---|---|
-| Description | 사용자가 시스템에 레시피를 검색한다.  |
+| Description | 사용자가 시스템에 레시피를 검색하여 원하는 레시피를 찾는다.  |
 
 4) Select custom option
-|Actor | User, System |
+
+|Actor | User |
 |---|---|
 | Description | 사용자가 제공된 레시피에서 몇인분, 요리도구, 대체 식재료를 선택한다.  |
 
 5) Send inquiry
 
-|Actor | User, System, Administrator |
+|Actor | User, Administrator |
 |---|---|
 | Description | 사용자가 시스템에 문의사항을 남기면 시스템 관리자에게 전송한다.  |
 
 6) Storage & Care guide
 
-|Actor | User, System |
+|Actor | User |
 |---|---|
 | Description | 사용자가 보관방법 버튼을 누르면 재료, 요리도구 보관법에 대한 정보를 제공한다.  |
 
-7) Provide recipe
+7) Adapted recipe
 
-|Actor | User, System, Server |
-|---|---|
-| Description | 서버에서 시스템으로 레시피를 보내주면 이 정보를 사용자에게 보여준다.   |
-
-8) Adapted recipe
-
-|Actor | User, System |
+|Actor | User |
 |---|---|
 | Description |  사용자가 선택한 옵션에 맞추어 레시피를 수정하여 보여준다. |
 
-9) Customer support
+8) Customer support
 
-|Actor | User, System, Administrator |
+|Actor | User, Administrator |
 |---|---|
-| Description | 관리자가 문의사항에 대한 답변을 시스템에 보내주면 이를 사용자에게 보여준다.  |
+| Description | 관리작 문의사항을 해결 또는 답변하여 시스템을 통해 사용자에게 보낸다.  |
 
-10) Bug fix
 
-|Actor | Administrator , System |
-|---|---|
-| Description | 관리자가 시스템에 생긴 문제를 해결한다.   |
+9) Recipe update
 
-11) Request auth
-
-|Actor | System, Server |
-|---|---|
-| Description | 로그인한 사용자의 정보가 서버에 있는지 인증을 요구한다.  |
-
-12) Create account
-
-|Actor | System, Server |
-|---|---|
-| Description | 회원가입한 사용자의 정보를 토대로 새로운 계정을 서버에 생성한다.   |
-
-13) Request recipe
-
-|Actor | System, Server |
-|---|---|
-| Description | 사용자가 검색한 레시피를 서버에 요청한다.   |
-
-    
-14) Verify user
-
-|Actor | System, Server |
-|---|---|
-| Description | 시스템에 요청한 로그인정보가 서버에 있는지 확인한다.   |
-
-15) Recipe update
-
-|Actor | Server, Administrator |
+|Actor | Administrator |
 |---|---|
 | Description | 관리자가 서버에 새로운 레시피를 추가한다.   |
 
-16) User management
+10) User management
 
-|Actor | Administrator, Server |
+|Actor | Administrator |
 |---|---|
 | Description | 관리자가 서버에 있는 사용자 정보를 관리한다.| 
 
@@ -166,3 +125,24 @@ Logo: 든든(Deun Deun)
 
 
 ### 4.Concept of operation
+
+1. Register
+
+|Purpose|사용자가 앱|
+|---|---|
+|Approach||
+|Dynamics||
+|Goals||
+
+- Login: 사용자 로그인 
+- Recipe search: 레시피 검색
+- Select custom option: 레시피에서 옵션 선택
+- Send inquiry: 문의사항 전송
+- Storage & Care guide: 재료, 도구보관법 제공
+- Provide recipe: 레시피 제공
+- Adapted recipe: 옵션에 맞춘 레시피 제공
+- Customer support: 문의사항 해결 및 답변
+- Create account: 계정 생성
+- Request recipe: 레시피 요청
+- Recipe update: 레시피 추가
+- User management: 유저 목록 관리
