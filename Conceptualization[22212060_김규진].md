@@ -1,9 +1,9 @@
 # 1. Conceptualization
-Project Title: 자취생 요리 도우미
+<img width="1408" height="768" alt="Gemini_Generated_Image_e8cu1le8cu1le8cu" src="https://github.com/user-attachments/assets/4269471c-5080-408a-8f02-7953170f696d" />
 
-Logo: 든든(Deun Deun) 
-
-김규진 22212060 kimmkyujin1208@naver.com
+#### Project Title: 자취생 요리 도우미
+#### 이름: 김규진 (22212060) 
+#### 이메일: kimmkyujin1208@naver.com
 
 ---
 
@@ -189,6 +189,8 @@ Logo: 든든(Deun Deun)
 |Dynamics|  관리자가 유저목록에 대해 관리가 필요한 경우. |
 |Goals| 유저목록의 안전성을 유지하고 원활한 서비스 환경을 조성한다. |
 
+---
+
 ### 5. Problem statement
 #### 1) Describe the problems
 든든은 자취생과 같이, 요리에 미숙하고 주방 환경이 완벽하지 않은 상황에서도 요리의 완성도를 올려주기 위해 만든 소프트웨어이다. 사용자가 자신의 상황을 레시피에 반영하여 맞춤형 레시피를 제공하는 것에 목적이 있다. 따라서 해당 소프트웨어는 아래의 문제들을 고려해야 한다.
@@ -218,6 +220,8 @@ Logo: 든든(Deun Deun)
 
 4. 화면이 사용자와 떨어져 있어도 내용이 잘 보이도록 UI의 가독성을 높여야 한다.
 
+---
+
 ### 6. Glossary
 |Term | Description |
 |---|---|
@@ -230,6 +234,8 @@ Logo: 든든(Deun Deun)
 |표준 단위|서로 다른 계량의 단위를 일정한 기준(큰술)으로 변환하여 통일한 수치|
 |UI 가독성|사용자와 화면이 떨어진 환경에서도 텍스트나 버튼이 쉽게 인식되도록하는 편의성|
 |데이터의 신뢰성|수집된 데이터의 정보가 정확하고 표준화된 단위를 유지하여 사용하는지에 대한 데이터의 품질 상태|
+
+---
 
 ### 7. Reference
 1. [국가데이터처, "2023 통계로 보는 1인 가구"](https://buly.kr/9tCBxRZ)
