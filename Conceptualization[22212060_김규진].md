@@ -12,6 +12,7 @@
 | Revision date | Version | Description | Author |
 |---|---|---|---|
 |     26.03.20        |  0.1.0       |   Conceptualization       |  kyujin      |
+|     26.04.05        |  0.1.1       |   2,3번의 login 내용 수정         |  kyujin      |
 
 ---
 
@@ -37,7 +38,8 @@
 ---
 ### 2. System context diagram
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e32ee80b-f4f7-47d6-91d3-e208568b3d6f" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3b75040d-369f-462e-916b-d8418585f5b9" />
+
 
 
 - Register: 회원가입
@@ -63,9 +65,9 @@
 
 2) Login
 
-|Actor | User |
+|Actor | User, Administrator |
 |---|---|
-| Description | 사용자가 시스템에 로그인을 시도한다.   |
+| Description | 사용자및 관리자가 시스템에 로그인을 시도한다.   |
 
 3) Recipe search
 
