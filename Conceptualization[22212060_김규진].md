@@ -30,7 +30,7 @@
 1) Project background
 - 국가데이터처 '2025 통계로 보는 1인 가구' 자료에 따르면, 대한민국 1인 가구 비중은 전체 가구의 36.1%를 기록하며 역대 최고치인 8,045 가구에 도달했습니다. 1인 가구는 이제 우리사회의 큰 부분이 되었는데 시중의 요리 콘텐츠 혹은 레시피들은 아직도 다인 가구의 완벽한 주방환경을 기준으로 제공되고 있습니다.
 저는 직접 자취를 하며 1인 가구의 현실적인 한계를 체감했습니다.
-<img width="300" height="422" alt="image" src="https://github.com/user-attachments/assets/78ffaf78-c884-46ab-b60f-73e8f08b0d00" />
+<img width="500" height="422" alt="image" src="https://github.com/user-attachments/assets/78ffaf78-c884-46ab-b60f-73e8f08b0d00" />
 
 좁은 주방에 모든 조미료와 조리 기구를 갖추기란 불가능에 가까우며 레시피에 나온 재료가 없어서 요리를 포기하거나, 1인분 조리 시 간 조절에 실패해 아까운 식재료를 버리게 되는 경험은 저뿐만 아니라 대부분의 자취 초보들이 겪는 문제점입니다.<br/>
 본 프로젝트는 이러한 사회적 흐름에 발맞추어, 완벽한 환경을 강요하는 기존 레시피 앱의 틀을 깨고, 단순히 레시피만 알려주는게 아닌 사용자의 현 상황에 맞추어 능동적인 도움으로 요리의 완성을 돕는 '자취생 전용 보조 요리사' 서비스를 구현하고자 합니다.
@@ -38,7 +38,7 @@
 ---
 ### 2. System context diagram
 
-<img width="2500" height="900" alt="image" src="https://github.com/user-attachments/assets/3b75040d-369f-462e-916b-d8418585f5b9" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3b75040d-369f-462e-916b-d8418585f5b9" />
 
 
 
