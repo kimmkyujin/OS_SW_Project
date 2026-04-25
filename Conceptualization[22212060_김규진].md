@@ -13,6 +13,8 @@
 |---|---|---|---|
 |     26.03.20        |  0.1.0       |   Conceptualization       |  kyujin      |
 |     26.04.05        |  0.1.1       |   2,3번의 login 내용 수정         |  kyujin      |
+|     26.04.25        |  0.2.1       |   2,3번의 use case 추가 및 수정        |  kyujin      |
+
 
 ---
 
@@ -41,17 +43,17 @@
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3b75040d-369f-462e-916b-d8418585f5b9" />
 
 
-
-- Register: 회원가입
 - Login: 사용자 로그인 
-- Recipe search: 레시피 검색 
-- Select custom option: 레시피에서 옵션 선택
-- Send inquiry: 문의사항 전송
+- Register: 회원가입
+- Recipe search: 레시피 검색
+- View recipe: 레시피 상세내용 확인
+- Change recipe : 옵션선택에 따른 레시피 변경
 - Storage & Care guide: 재료, 도구보관법 제공
-- Adapted recipe: 옵션에 맞춘 레시피 제공
-- Customer support: 문의사항 해결 및 답변
+- Recommend recipe: 레시피 추천
+- View scrap: 스크랩한 레시피 목록 확인
+- Send inquiry: 문의사항 전송
 - Recipe update: 레시피 추가
-- User management: 유저 목록 관리
+- Manage inquiry: 문의사항 해결 및 답변
 
 ---
 
