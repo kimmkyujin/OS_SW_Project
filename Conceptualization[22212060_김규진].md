@@ -15,6 +15,7 @@
 |     26.04.05        |  0.1.1       |   2,3번의 login 내용 수정         |  kyujin      |
 |     26.04.25        |  0.2.1       |   2번의 use case 추가 및 수정        |  kyujin      |
 |     26.04.26        |  0.2.2       |   3,4번의 use case 추가 및 수정        |  kyujin      |
+|     26.04.29        |  0.2.3       |   Recipe upadate use case 삭제        |  kyujin      |
 
 
 ---
@@ -53,7 +54,6 @@
 - Recommend recipe: 레시피 추천
 - View scrap: 스크랩한 레시피 목록 확인
 - Send inquiry: 문의사항 전송
-- Recipe update: 레시피 추가
 - Manage inquiry: 문의사항 해결 및 답변
 
 ---
@@ -105,12 +105,7 @@
 |---|---|
 | Description | 사용자가 문의사항을 관리자에게 보낸다. |
 
-10) Recipe update
-| Actor | Administrator |
-|---|---|
-| Description | 관리자가 레시피 추가 및 수정, 삭제를 한다. |
-
-11) Manage inquiry
+10) Manage inquiry
 | Actor | Administrator |
 |---|---|
 | Description | 관리자가 사용자의 문의사항을 확인하고 답변을 보내게 함. |
@@ -194,15 +189,7 @@
 |Dynamics| 사용자가 버그 제보, 레시피 요청 등 시스템 이용과 관련하여 관리자의 도움이 필요한 경우. |
 |Goals| 사용자의 의견 및 문의사항이 관리자 시스템에 정확하게 접수되도록 한다. |
 
-10. Recipe update
-
-|Purpose| 앱 내에 최신 레시피를 유지하고 다양한 요리 정보를 체계적으로 관리하기 위함. |
-|---|---|
-|Approach| 관리자가 관리자 전용 시스템에 접속하여 새로운 레시피 데이터를 입력하여 추가하거나, 기존 레시피의 정보를 수정 및 삭제하여 서버 데이터베이스를 업데이트함. |
-|Dynamics| 새로운 레시피를 추가하거나 기존 레시피 데이터의 보완 및 오류 수정이 필요한 경우. |
-|Goals| 지속적인 레시피 관리를 통해 사용자에게 다양하고 정확한 요리 데이터를 제공한다. |
-
-11. Manage inquiry
+10. Manage inquiry
 
 |Purpose| 접수된 사용자의 문의사항을 관리자가 확인하고 적절한 조치를 취하여 해결하기 위함. |
 |---|---|
