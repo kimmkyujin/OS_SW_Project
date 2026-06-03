@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="#FFFFFF"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_recipe_title_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="된장찌개"
+                        android:textColor="#000000"
+                        android:textSize="32sp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_recipe_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="?attr/homeAsUpIndicator" />
+
+            <ImageView
+                android:id="@+id/btn_scrap"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="16dp"
+                android:padding="14dp"
+                android:src="@drawable/ic_heart"
+                android:alpha="0.3"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:translationZ="100dp" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- 조리도구 선택 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF5EE"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/btn_tool_selector"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_orange_button"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="뚝배기"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/layout_tool_options"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:elevation="4dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/option_ttukbaegi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="뚝배기"
+                        android:gravity="center"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:background="?attr/selectableItemBackground"/>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE"/>
+                    <TextView
+                        android:id="@+id/option_pot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="냄비"
+                        android:gravity="center"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:background="?attr/selectableItemBackground"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 인분/시간 선택 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF5EE"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/btn_servings_selector"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_orange_button"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="1인분 / 15분"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/layout_servings_options"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:elevation="4dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/option_1serving"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="1인분 / 15분"
+                        android:gravity="center"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:background="?attr/selectableItemBackground"/>
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE"/>
+                    <TextView
+                        android:id="@+id/option_2servings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="2인분 / 20분"
+                        android:gravity="center"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:background="?attr/selectableItemBackground"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 재료 섹션 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF5EE"
+                android:padding="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="재료"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/container_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <!-- 레시피 순서 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="레시피"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:lineSpacingExtra="10dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_storage_care"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/orange_primary"
+                android:text="보관 및 관리법"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

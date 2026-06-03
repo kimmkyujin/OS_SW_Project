@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.deundeun">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Deundeun">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.RecipeDetailActivity" />
+        <activity android:name=".ui.InquiryActivity" />
+        <activity android:name=".ui.StorageCareActivity" />
+        <activity android:name=".ui.InquiryListActivity" />
+        <activity android:name=".ui.RecommendActivity" />
+        <activity android:name=".ui.AdminActivity" />
+        <activity android:name=".ui.AdminInquiryListActivity" />
+        <activity android:name=".ui.AdminInquiryDetailActivity" />
+        <activity android:name=".ui.UserInquiryDetailActivity" />
+    </application>
+
+</manifest>

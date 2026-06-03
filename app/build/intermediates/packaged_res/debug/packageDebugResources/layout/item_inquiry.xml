@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="10dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_inquiry_no"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="101"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/tv_inquiry_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="레시피 추천"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/tv_inquiry_status"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="완료"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:paddingVertical="2dp"
+        android:background="@drawable/bg_status_completed" />
+
+    <TextView
+        android:id="@+id/tv_inquiry_user"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="사용자"
+        android:textColor="#333333"
+        android:visibility="gone" />
+
+</LinearLayout>

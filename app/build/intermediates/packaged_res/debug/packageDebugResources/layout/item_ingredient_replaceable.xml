@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tv_ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="신김치 100g"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/btn_replace"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_orange_button"
+        android:textColor="#FFFFFF"
+        android:text="돼지고기 50g"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- 드롭다운 리스트 (클릭 시 노출) -->
+    <LinearLayout
+        android:id="@+id/layout_dropdown"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <!-- 동적으로 옵션들이 추가됨 -->
+    </LinearLayout>
+
+</LinearLayout>

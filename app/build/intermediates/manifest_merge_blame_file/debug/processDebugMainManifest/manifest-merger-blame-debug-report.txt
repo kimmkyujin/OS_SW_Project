@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.deundeun"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="24"
+8-->INJECTED
+9        android:targetSdkVersion="34" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\ff7bde3b988d20ea059740f4bfcb411d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.deundeun.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\ff7bde3b988d20ea059740f4bfcb411d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\ff7bde3b988d20ea059740f4bfcb411d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.deundeun.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\ff7bde3b988d20ea059740f4bfcb411d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\ff7bde3b988d20ea059740f4bfcb411d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:8:5-34:19
+21        android:allowBackup="true"
+21-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:9:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\ff7bde3b988d20ea059740f4bfcb411d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+24-->INJECTED
+25        android:icon="@mipmap/ic_launcher"
+25-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:10:9-43
+26        android:label="@string/app_name"
+26-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:11:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:12:9-54
+28        android:supportsRtl="true"
+28-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:13:9-35
+29        android:theme="@style/Theme.Deundeun" >
+29-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:14:9-46
+30        <activity
+30-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:15:9-22:20
+31            android:name="com.deundeun.ui.MainActivity"
+31-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:16:13-44
+32            android:exported="true" >
+32-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:17:13-36
+33            <intent-filter>
+33-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:18:13-21:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:19:17-69
+34-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:20:17-77
+36-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:20:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="com.deundeun.ui.LoginActivity" />
+39-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:23:9-54
+39-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:23:19-51
+40        <activity android:name="com.deundeun.ui.RegisterActivity" />
+40-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:24:9-57
+40-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:24:19-54
+41        <activity android:name="com.deundeun.ui.RecipeDetailActivity" />
+41-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:25:9-61
+41-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:25:19-58
+42        <activity android:name="com.deundeun.ui.InquiryActivity" />
+42-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:26:9-56
+42-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:26:19-53
+43        <activity android:name="com.deundeun.ui.StorageCareActivity" />
+43-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:27:9-60
+43-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:27:19-57
+44        <activity android:name="com.deundeun.ui.InquiryListActivity" />
+44-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:28:9-60
+44-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:28:19-57
+45        <activity android:name="com.deundeun.ui.RecommendActivity" />
+45-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:29:9-58
+45-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:29:19-55
+46        <activity android:name="com.deundeun.ui.AdminActivity" />
+46-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:30:9-54
+46-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:30:19-51
+47        <activity android:name="com.deundeun.ui.AdminInquiryListActivity" />
+47-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:31:9-65
+47-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:31:19-62
+48        <activity android:name="com.deundeun.ui.AdminInquiryDetailActivity" />
+48-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:32:9-67
+48-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:32:19-64
+49        <activity android:name="com.deundeun.ui.UserInquiryDetailActivity" />
+49-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:33:9-66
+49-->C:\workspaces\antigravity-worksapce\OSS\app\src\main\AndroidManifest.xml:33:19-63
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+53            android:authorities="com.deundeun.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\57565bbb3ec9a6d1f7c09582b83cc0f4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\294fbf071a67996e6e8aa23b7874fdc7\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\294fbf071a67996e6e8aa23b7874fdc7\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kimmk\.gradle\caches\9.4.1\transforms\294fbf071a67996e6e8aa23b7874fdc7\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+61        </provider>
+62    </application>
+63
+64</manifest>
